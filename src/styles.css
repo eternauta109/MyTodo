@@ -1,0 +1,62 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: column;
+  /* border: 1px solid green; */
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  min-height: 300px;
+}
+
+span.complete:after {
+  content: "\02713";
+  font-size: 28px;
+  padding: 4px;
+  color: green;
+}
+
+span.uncomplete:after {
+  content: "\025A1";
+  font-size: 28px;
+  padding: 4px;
+}
+
+li.complete {
+  text-decoration: line-through;
+  color: red;
+}
+
+li {
+  text-align: left;
+  border-bottom: 1px solid #dddd;
+  padding: 10px 0px;
+  cursor: pointer;
+  min-width: 250px;
+}
+
+li:hover::after {
+  content: "\02A2F";
+  font-size: 18px;
+  color: red;
+  float: right;
+  margin-right: 5px;
+}
+li:last-child {
+  border: 0px;
+}
+
+.footerContainer {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
